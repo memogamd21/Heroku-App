@@ -38,10 +38,11 @@ import webbrowser
 
 global graph
 graph = tf.get_default_graph()
-
+import tensorflow.python.util.deprecation as deprecation
+deprecation._PRINT_DEPRECATION_WARNINGS = False
 app = Flask(__name__, static_folder = "IMAGE_UPLOADS")
-app.secret_key = "memo"
-app.permanent_session_lifetime = timedelta(days=5)
+#app.secret_key = "memo"
+#app.permanent_session_lifetime = timedelta(days=5)
 app.config["IMAGE_UPLOADS"] = "IMAGE_UPLOADS"
 app.config["ALLOWED_IMAGE_EXTENSIONS"] = ["JPEG", "JPG", "PNG", "GIF"]
 
