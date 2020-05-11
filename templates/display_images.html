@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <p>Search Results ...</p>
+</head>
+<body>
+    <hr>
+    {% for i in range(data[2]) %}
+    <a class="image" href="{{ url_for("static", filename = data[0][i])  }}" style="width: 340px; height: 340px">
+        <img src="{{ url_for("static", filename = data[0][i]) }}" width=340 height=340 />
+    </a>
+    <p> {{ data[1][i] }} </p>
+    {% endfor %}
+</body>
+</html>
