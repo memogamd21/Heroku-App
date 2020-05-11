@@ -1,4 +1,4 @@
-python>=3.6.10
+python
 tensorflow==1.14.0
 werkzeug==1.0.0
 numpy==1.18.1
