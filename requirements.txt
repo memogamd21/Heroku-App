@@ -1,5 +1,5 @@
 tensorflow==1.14.0
-werkzeug==1.0.0
+werkzeug==2.2.3
 setuptools>=41.0.0
 numpy==1.18.1
 pandas==1.0.2
